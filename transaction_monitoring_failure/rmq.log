@@ -1,0 +1,592 @@
+[38;5;6m [38;5;5m15:09:32.84 [0m
+[38;5;6m [38;5;5m15:09:32.84 [0m[1mWelcome to the Bitnami rabbitmq container[0m
+[38;5;6m [38;5;5m15:09:32.85 [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/bitnami-docker-rabbitmq[0m
+[38;5;6m [38;5;5m15:09:32.86 [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/bitnami-docker-rabbitmq/issues[0m
+[38;5;6m [38;5;5m15:09:32.86 [0m
+[38;5;6m [38;5;5m15:09:32.86 [0m[38;5;2mINFO [0m ==> ** Starting RabbitMQ setup **
+[38;5;6m [38;5;5m15:09:32.90 [0m[38;5;2mINFO [0m ==> Validating settings in RABBITMQ_* env vars..
+[38;5;6m [38;5;5m15:09:32.92 [0m[38;5;2mINFO [0m ==> Initializing RabbitMQ...
+[38;5;6m [38;5;5m15:09:32.97 [0m[38;5;2mINFO [0m ==> Persisted data detected. Restoring...
+
+[38;5;6m [38;5;5m15:09:32.97 [0m[38;5;2mINFO [0m ==> ** RabbitMQ setup finished! **
+[38;5;6m [38;5;5m15:09:33.00 [0m[38;5;2mINFO [0m ==> ** Starting RabbitMQ **
+Configuring logger redirection
+2020-11-30 15:09:39.930 [debug] <0.284.0> Lager installed handler error_logger_lager_h into error_logger
+2020-11-30 15:09:39.936 [debug] <0.287.0> Lager installed handler lager_forwarder_backend into error_logger_lager_event
+2020-11-30 15:09:39.936 [debug] <0.308.0> Lager installed handler lager_forwarder_backend into rabbit_log_mirroring_lager_event
+2020-11-30 15:09:39.936 [debug] <0.290.0> Lager installed handler lager_forwarder_backend into rabbit_log_lager_event
+2020-11-30 15:09:39.936 [debug] <0.293.0> Lager installed handler lager_forwarder_backend into rabbit_log_channel_lager_event
+2020-11-30 15:09:39.936 [debug] <0.311.0> Lager installed handler lager_forwarder_backend into rabbit_log_prelaunch_lager_event
+2020-11-30 15:09:39.936 [debug] <0.296.0> Lager installed handler lager_forwarder_backend into rabbit_log_connection_lager_event
+2020-11-30 15:09:39.937 [debug] <0.314.0> Lager installed handler lager_forwarder_backend into rabbit_log_queue_lager_event
+2020-11-30 15:09:39.937 [debug] <0.299.0> Lager installed handler lager_forwarder_backend into rabbit_log_feature_flags_lager_event
+2020-11-30 15:09:39.937 [debug] <0.302.0> Lager installed handler lager_forwarder_backend into rabbit_log_federation_lager_event
+2020-11-30 15:09:39.937 [debug] <0.305.0> Lager installed handler lager_forwarder_backend into rabbit_log_ldap_lager_event
+2020-11-30 15:09:39.937 [debug] <0.317.0> Lager installed handler lager_forwarder_backend into rabbit_log_ra_lager_event
+2020-11-30 15:09:39.937 [debug] <0.320.0> Lager installed handler lager_forwarder_backend into rabbit_log_shovel_lager_event
+2020-11-30 15:09:39.937 [debug] <0.323.0> Lager installed handler lager_forwarder_backend into rabbit_log_upgrade_lager_event
+2020-11-30 15:09:39.952 [info] <0.44.0> Application lager started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:40.431 [debug] <0.280.0> Lager installed handler lager_backend_throttle into lager_event
+2020-11-30 15:09:41.678 [info] <0.44.0> Application mnesia started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:41.679 [info] <0.269.0> 
+ Starting RabbitMQ 3.8.9 on Erlang 22.3
+ Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+ Licensed under the MPL 2.0. Website: https://rabbitmq.com
+
+  ##  ##      RabbitMQ 3.8.9
+  ##  ##
+  ##########  Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+  ######  ##
+  ##########  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+
+  Doc guides: https://rabbitmq.com/documentation.html
+  Support:    https://rabbitmq.com/contact.html
+  Tutorials:  https://rabbitmq.com/getstarted.html
+  Monitoring: https://rabbitmq.com/monitoring.html
+
+  Logs: <stdout>
+
+  Config file(s): /opt/bitnami/rabbitmq/etc/rabbitmq/rabbitmq.conf
+
+  Starting broker...2020-11-30 15:09:41.680 [info] <0.269.0> 
+ node           : rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local
+ home dir       : /opt/bitnami/rabbitmq/.rabbitmq
+ config file(s) : /opt/bitnami/rabbitmq/etc/rabbitmq/rabbitmq.conf
+ cookie hash    : rpkLN/fz9NSuo1D3si/hIA==
+ log(s)         : <stdout>
+ database dir   : /bitnami/rabbitmq/mnesia/rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local
+2020-11-30 15:09:41.688 [info] <0.269.0> Running boot step pre_boot defined by app rabbit
+2020-11-30 15:09:41.688 [info] <0.269.0> Running boot step rabbit_core_metrics defined by app rabbit
+2020-11-30 15:09:41.689 [info] <0.269.0> Running boot step rabbit_alarm defined by app rabbit
+2020-11-30 15:09:41.693 [info] <0.405.0> Memory high watermark set to 12866 MiB (13491794739 bytes) of 32166 MiB (33729486848 bytes) total
+2020-11-30 15:09:41.696 [info] <0.407.0> Enabling free disk space monitoring
+2020-11-30 15:09:41.696 [info] <0.407.0> Disk free limit set to 50MB
+2020-11-30 15:09:41.699 [info] <0.269.0> Running boot step code_server_cache defined by app rabbit
+2020-11-30 15:09:41.700 [info] <0.269.0> Running boot step file_handle_cache defined by app rabbit
+2020-11-30 15:09:41.700 [info] <0.410.0> Limiting to approx 1048479 file handles (943629 sockets)
+2020-11-30 15:09:41.700 [info] <0.411.0> FHC read buffering:  OFF
+2020-11-30 15:09:41.700 [info] <0.411.0> FHC write buffering: ON
+2020-11-30 15:09:41.700 [info] <0.269.0> Running boot step worker_pool defined by app rabbit
+2020-11-30 15:09:41.700 [info] <0.366.0> Will use 8 processes for default worker pool
+2020-11-30 15:09:41.700 [info] <0.366.0> Starting worker pool 'worker_pool' with 8 processes in it
+2020-11-30 15:09:41.701 [info] <0.269.0> Running boot step database defined by app rabbit
+2020-11-30 15:09:41.703 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2020-11-30 15:09:41.752 [info] <0.269.0> Successfully synced tables from a peer
+2020-11-30 15:09:41.752 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2020-11-30 15:09:41.752 [info] <0.269.0> Successfully synced tables from a peer
+2020-11-30 15:09:41.850 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2020-11-30 15:09:41.850 [info] <0.269.0> Successfully synced tables from a peer
+2020-11-30 15:09:41.864 [info] <0.269.0> Will register with peer discovery backend rabbit_peer_discovery_k8s
+2020-11-30 15:09:41.889 [info] <0.269.0> Running boot step database_sync defined by app rabbit
+2020-11-30 15:09:41.889 [info] <0.269.0> Running boot step feature_flags defined by app rabbit
+2020-11-30 15:09:41.889 [info] <0.269.0> Running boot step codec_correctness_check defined by app rabbit
+2020-11-30 15:09:41.889 [info] <0.269.0> Running boot step external_infrastructure defined by app rabbit
+2020-11-30 15:09:41.889 [info] <0.269.0> Running boot step rabbit_registry defined by app rabbit
+2020-11-30 15:09:41.890 [info] <0.269.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2020-11-30 15:09:41.890 [info] <0.269.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2020-11-30 15:09:41.890 [info] <0.269.0> Running boot step rabbit_event defined by app rabbit
+2020-11-30 15:09:41.890 [info] <0.269.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2020-11-30 15:09:41.890 [info] <0.269.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2020-11-30 15:09:41.890 [info] <0.269.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2020-11-30 15:09:41.890 [info] <0.269.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2020-11-30 15:09:41.890 [info] <0.269.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2020-11-30 15:09:41.891 [info] <0.269.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2020-11-30 15:09:41.891 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2020-11-30 15:09:41.891 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2020-11-30 15:09:41.891 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2020-11-30 15:09:41.891 [info] <0.269.0> Running boot step rabbit_priority_queue defined by app rabbit
+2020-11-30 15:09:41.891 [info] <0.269.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2020-11-30 15:09:41.891 [info] <0.269.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2020-11-30 15:09:41.891 [info] <0.269.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2020-11-30 15:09:41.891 [info] <0.269.0> Running boot step kernel_ready defined by app rabbit
+2020-11-30 15:09:41.891 [info] <0.269.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2020-11-30 15:09:41.892 [info] <0.269.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2020-11-30 15:09:41.892 [info] <0.440.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2020-11-30 15:09:41.892 [info] <0.269.0> Running boot step guid_generator defined by app rabbit
+2020-11-30 15:09:41.969 [info] <0.269.0> Running boot step rabbit_node_monitor defined by app rabbit
+2020-11-30 15:09:41.969 [info] <0.444.0> Starting rabbit_node_monitor
+2020-11-30 15:09:41.969 [info] <0.269.0> Running boot step delegate_sup defined by app rabbit
+2020-11-30 15:09:41.971 [info] <0.269.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2020-11-30 15:09:41.971 [info] <0.269.0> Running boot step core_initialized defined by app rabbit
+2020-11-30 15:09:41.971 [info] <0.269.0> Running boot step upgrade_queues defined by app rabbit
+2020-11-30 15:09:41.997 [info] <0.269.0> Running boot step rabbit_connection_tracking defined by app rabbit
+2020-11-30 15:09:41.998 [info] <0.269.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2020-11-30 15:09:41.998 [info] <0.269.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2020-11-30 15:09:41.998 [info] <0.269.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2020-11-30 15:09:41.998 [info] <0.269.0> Running boot step rabbit_policies defined by app rabbit
+2020-11-30 15:09:42.000 [info] <0.269.0> Running boot step rabbit_policy defined by app rabbit
+2020-11-30 15:09:42.000 [info] <0.269.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2020-11-30 15:09:42.000 [info] <0.269.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2020-11-30 15:09:42.000 [info] <0.269.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2020-11-30 15:09:42.000 [info] <0.269.0> Running boot step recovery defined by app rabbit
+2020-11-30 15:09:42.001 [info] <0.473.0> Making sure data directory '/bitnami/rabbitmq/mnesia/rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2020-11-30 15:09:42.087 [info] <0.473.0> Starting message stores for vhost '/'
+2020-11-30 15:09:42.088 [info] <0.477.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2020-11-30 15:09:42.094 [info] <0.473.0> Started message store of type transient for vhost '/'
+2020-11-30 15:09:42.095 [info] <0.481.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2020-11-30 15:09:42.099 [info] <0.473.0> Started message store of type persistent for vhost '/'
+2020-11-30 15:09:42.101 [info] <0.269.0> Running boot step empty_db_check defined by app rabbit
+2020-11-30 15:09:42.101 [info] <0.269.0> Will not seed default virtual host and user: have definitions to load...
+2020-11-30 15:09:42.101 [info] <0.269.0> Running boot step rabbit_looking_glass defined by app rabbit
+2020-11-30 15:09:42.101 [info] <0.269.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2020-11-30 15:09:42.102 [info] <0.269.0> Running boot step background_gc defined by app rabbit
+2020-11-30 15:09:42.102 [info] <0.269.0> Running boot step connection_tracking defined by app rabbit
+2020-11-30 15:09:42.102 [info] <0.269.0> Setting up a table for connection tracking on this node: 'tracked_connection_on_node_rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.103 [info] <0.269.0> Setting up a table for per-vhost connection counting on this node: 'tracked_connection_per_vhost_on_node_rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.103 [info] <0.269.0> Running boot step routing_ready defined by app rabbit
+2020-11-30 15:09:42.103 [info] <0.269.0> Running boot step pre_flight defined by app rabbit
+2020-11-30 15:09:42.103 [info] <0.269.0> Running boot step notify_cluster defined by app rabbit
+2020-11-30 15:09:42.103 [info] <0.269.0> Running boot step networking defined by app rabbit
+2020-11-30 15:09:42.103 [info] <0.269.0> Running boot step definition_import_worker_pool defined by app rabbit
+2020-11-30 15:09:42.103 [info] <0.366.0> Starting worker pool 'definition_import_pool' with 8 processes in it
+2020-11-30 15:09:42.105 [info] <0.269.0> Running boot step cluster_name defined by app rabbit
+2020-11-30 15:09:42.105 [info] <0.269.0> Running boot step direct_client defined by app rabbit
+2020-11-30 15:09:42.105 [info] <0.44.0> Application rabbit started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.624 [info] <0.515.0> Feature flags: list of feature flags found:
+2020-11-30 15:09:42.624 [info] <0.515.0> Feature flags:   [ ] drop_unroutable_metric
+2020-11-30 15:09:42.624 [info] <0.515.0> Feature flags:   [ ] empty_basic_get_metric
+2020-11-30 15:09:42.624 [info] <0.515.0> Feature flags:   [x] implicit_default_bindings
+2020-11-30 15:09:42.625 [info] <0.515.0> Feature flags:   [x] maintenance_mode_status
+2020-11-30 15:09:42.625 [info] <0.515.0> Feature flags:   [x] quorum_queue
+2020-11-30 15:09:42.625 [info] <0.515.0> Feature flags:   [x] virtual_host_metadata
+2020-11-30 15:09:42.625 [info] <0.515.0> Feature flags: feature flag states written to disk: yes
+2020-11-30 15:09:42.822 [info] <0.515.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2020-11-30 15:09:42.823 [info] <0.515.0> Management plugin: using rates mode 'basic'
+2020-11-30 15:09:42.828 [info] <0.44.0> Application rabbitmq_management_agent started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.843 [info] <0.44.0> Application cowlib started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.859 [info] <0.44.0> Application cowboy started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.875 [info] <0.44.0> Application rabbitmq_web_dispatch started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.890 [info] <0.44.0> Application amqp_client started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.906 [info] <0.515.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2020-11-30 15:09:42.906 [info] <0.515.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2020-11-30 15:09:42.937 [info] <0.584.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2020-11-30 15:09:42.937 [info] <0.690.0> Statistics database started.
+2020-11-30 15:09:42.937 [info] <0.689.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2020-11-30 15:09:42.938 [info] <0.44.0> Application rabbitmq_management started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.955 [info] <0.515.0> Running boot step ldap_pool defined by app rabbitmq_auth_backend_ldap
+2020-11-30 15:09:42.955 [info] <0.366.0> Starting worker pool 'ldap_pool' with 64 processes in it
+2020-11-30 15:09:42.963 [info] <0.44.0> Application eldap started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.963 [warning] <0.766.0> LDAP plugin loaded, but rabbit_auth_backend_ldap is not in the list of auth_backends. LDAP auth will not work.
+2020-11-30 15:09:42.963 [info] <0.44.0> Application rabbitmq_auth_backend_ldap started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.978 [info] <0.772.0> Peer discovery: enabling node cleanup (will only log warnings). Check interval: 10 seconds.
+2020-11-30 15:09:42.978 [info] <0.44.0> Application rabbitmq_peer_discovery_common started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.993 [info] <0.515.0> Ready to start client connection listeners
+2020-11-30 15:09:42.993 [info] <0.44.0> Application rabbitmq_peer_discovery_k8s started on node 'rabbit@rabbitmq-0.rabbitmq-headless.transaction-monitoring-pr-464.svc.cluster.local'
+2020-11-30 15:09:42.997 [info] <0.792.0> started TCP listener on [::]:5672
+2020-11-30 15:09:43.197 [info] <0.515.0> Server startup complete; 6 plugins started.
+ * rabbitmq_peer_discovery_k8s
+ * rabbitmq_peer_discovery_common
+ * rabbitmq_auth_backend_ldap
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+ completed with 6 plugins.
+2020-11-30 15:09:43.197 [info] <0.515.0> Resetting node maintenance status
+2020-11-30 15:09:59.186 [info] <0.805.0> accepting AMQP connection <0.805.0> (10.27.171.226:42340 -> 10.27.177.86:5672)
+2020-11-30 15:09:59.187 [error] <0.805.0> Error on AMQP connection <0.805.0> (10.27.171.226:42340 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:09:59.200 [info] <0.805.0> closing AMQP connection <0.805.0> (10.27.171.226:42340 -> 10.27.177.86:5672)
+2020-11-30 15:10:09.848 [info] <0.813.0> accepting AMQP connection <0.813.0> (10.27.160.223:47990 -> 10.27.177.86:5672)
+2020-11-30 15:10:09.850 [error] <0.813.0> Error on AMQP connection <0.813.0> (10.27.160.223:47990 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:10:09.860 [info] <0.813.0> closing AMQP connection <0.813.0> (10.27.160.223:47990 -> 10.27.177.86:5672)
+2020-11-30 15:10:15.718 [info] <0.819.0> accepting AMQP connection <0.819.0> (10.27.160.223:48014 -> 10.27.177.86:5672)
+2020-11-30 15:10:15.719 [error] <0.819.0> Error on AMQP connection <0.819.0> (10.27.160.223:48014 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:10:15.728 [info] <0.819.0> closing AMQP connection <0.819.0> (10.27.160.223:48014 -> 10.27.177.86:5672)
+2020-11-30 15:10:17.095 [info] <0.822.0> accepting AMQP connection <0.822.0> (10.27.171.226:42472 -> 10.27.177.86:5672)
+2020-11-30 15:10:17.096 [error] <0.822.0> Error on AMQP connection <0.822.0> (10.27.171.226:42472 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:10:17.109 [info] <0.822.0> closing AMQP connection <0.822.0> (10.27.171.226:42472 -> 10.27.177.86:5672)
+2020-11-30 15:10:37.370 [info] <0.837.0> accepting AMQP connection <0.837.0> (10.27.160.223:48140 -> 10.27.177.86:5672)
+2020-11-30 15:10:37.372 [error] <0.837.0> Error on AMQP connection <0.837.0> (10.27.160.223:48140 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:10:37.388 [info] <0.837.0> closing AMQP connection <0.837.0> (10.27.160.223:48140 -> 10.27.177.86:5672)
+2020-11-30 15:10:43.036 [info] <0.843.0> accepting AMQP connection <0.843.0> (10.27.171.226:42630 -> 10.27.177.86:5672)
+2020-11-30 15:10:43.037 [error] <0.843.0> Error on AMQP connection <0.843.0> (10.27.171.226:42630 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:10:43.051 [info] <0.843.0> closing AMQP connection <0.843.0> (10.27.171.226:42630 -> 10.27.177.86:5672)
+2020-11-30 15:11:10.823 [info] <0.860.0> accepting AMQP connection <0.860.0> (10.27.160.223:48410 -> 10.27.177.86:5672)
+2020-11-30 15:11:10.824 [error] <0.860.0> Error on AMQP connection <0.860.0> (10.27.160.223:48410 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:11:10.834 [info] <0.860.0> closing AMQP connection <0.860.0> (10.27.160.223:48410 -> 10.27.177.86:5672)
+2020-11-30 15:11:39.313 [info] <0.880.0> accepting AMQP connection <0.880.0> (10.27.171.226:43108 -> 10.27.177.86:5672)
+2020-11-30 15:11:39.315 [error] <0.880.0> Error on AMQP connection <0.880.0> (10.27.171.226:43108 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:11:39.327 [info] <0.880.0> closing AMQP connection <0.880.0> (10.27.171.226:43108 -> 10.27.177.86:5672)
+2020-11-30 15:12:06.394 [info] <0.904.0> accepting AMQP connection <0.904.0> (10.27.160.223:48840 -> 10.27.177.86:5672)
+2020-11-30 15:12:06.398 [error] <0.904.0> Error on AMQP connection <0.904.0> (10.27.160.223:48840 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:12:06.429 [info] <0.904.0> closing AMQP connection <0.904.0> (10.27.160.223:48840 -> 10.27.177.86:5672)
+2020-11-30 15:13:10.198 [info] <0.949.0> accepting AMQP connection <0.949.0> (10.27.171.226:43642 -> 10.27.177.86:5672)
+2020-11-30 15:13:10.204 [error] <0.949.0> Error on AMQP connection <0.949.0> (10.27.171.226:43642 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:13:10.217 [info] <0.949.0> closing AMQP connection <0.949.0> (10.27.171.226:43642 -> 10.27.177.86:5672)
+2020-11-30 15:13:34.299 [info] <0.971.0> accepting AMQP connection <0.971.0> (10.27.160.223:49330 -> 10.27.177.86:5672)
+2020-11-30 15:13:34.300 [error] <0.971.0> Error on AMQP connection <0.971.0> (10.27.160.223:49330 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:13:34.311 [info] <0.971.0> closing AMQP connection <0.971.0> (10.27.160.223:49330 -> 10.27.177.86:5672)
+2020-11-30 15:15:54.098 [info] <0.1068.0> accepting AMQP connection <0.1068.0> (10.27.171.226:44562 -> 10.27.177.86:5672)
+2020-11-30 15:15:54.099 [error] <0.1068.0> Error on AMQP connection <0.1068.0> (10.27.171.226:44562 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:15:54.112 [info] <0.1068.0> closing AMQP connection <0.1068.0> (10.27.171.226:44562 -> 10.27.177.86:5672)
+2020-11-30 15:16:30.357 [info] <0.1097.0> accepting AMQP connection <0.1097.0> (10.27.160.223:50332 -> 10.27.177.86:5672)
+2020-11-30 15:16:30.358 [error] <0.1097.0> Error on AMQP connection <0.1097.0> (10.27.160.223:50332 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:16:30.368 [info] <0.1097.0> closing AMQP connection <0.1097.0> (10.27.160.223:50332 -> 10.27.177.86:5672)
+2020-11-30 15:21:06.466 [info] <0.1286.0> accepting AMQP connection <0.1286.0> (10.27.171.226:46494 -> 10.27.177.86:5672)
+2020-11-30 15:21:06.468 [error] <0.1286.0> Error on AMQP connection <0.1286.0> (10.27.171.226:46494 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:21:06.477 [info] <0.1286.0> closing AMQP connection <0.1286.0> (10.27.171.226:46494 -> 10.27.177.86:5672)
+2020-11-30 15:21:42.803 [info] <0.1312.0> accepting AMQP connection <0.1312.0> (10.27.160.223:52238 -> 10.27.177.86:5672)
+2020-11-30 15:21:42.804 [error] <0.1312.0> Error on AMQP connection <0.1312.0> (10.27.160.223:52238 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:21:42.813 [info] <0.1312.0> closing AMQP connection <0.1312.0> (10.27.160.223:52238 -> 10.27.177.86:5672)
+2020-11-30 15:26:20.081 [info] <0.1506.0> accepting AMQP connection <0.1506.0> (10.27.171.226:48294 -> 10.27.177.86:5672)
+2020-11-30 15:26:20.082 [error] <0.1506.0> Error on AMQP connection <0.1506.0> (10.27.171.226:48294 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:26:20.089 [info] <0.1506.0> closing AMQP connection <0.1506.0> (10.27.171.226:48294 -> 10.27.177.86:5672)
+2020-11-30 15:26:51.319 [info] <0.1529.0> accepting AMQP connection <0.1529.0> (10.27.160.223:54034 -> 10.27.177.86:5672)
+2020-11-30 15:26:51.320 [error] <0.1529.0> Error on AMQP connection <0.1529.0> (10.27.160.223:54034 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:26:51.329 [info] <0.1529.0> closing AMQP connection <0.1529.0> (10.27.160.223:54034 -> 10.27.177.86:5672)
+2020-11-30 15:31:31.726 [info] <0.1724.0> accepting AMQP connection <0.1724.0> (10.27.171.226:50588 -> 10.27.177.86:5672)
+2020-11-30 15:31:31.728 [error] <0.1724.0> Error on AMQP connection <0.1724.0> (10.27.171.226:50588 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:31:31.758 [info] <0.1724.0> closing AMQP connection <0.1724.0> (10.27.171.226:50588 -> 10.27.177.86:5672)
+2020-11-30 15:31:59.307 [info] <0.1747.0> accepting AMQP connection <0.1747.0> (10.27.160.223:56442 -> 10.27.177.86:5672)
+2020-11-30 15:31:59.308 [error] <0.1747.0> Error on AMQP connection <0.1747.0> (10.27.160.223:56442 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:31:59.321 [info] <0.1747.0> closing AMQP connection <0.1747.0> (10.27.160.223:56442 -> 10.27.177.86:5672)
+2020-11-30 15:36:47.270 [info] <0.1946.0> accepting AMQP connection <0.1946.0> (10.27.171.226:54576 -> 10.27.177.86:5672)
+2020-11-30 15:36:47.271 [error] <0.1946.0> Error on AMQP connection <0.1946.0> (10.27.171.226:54576 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:36:47.285 [info] <0.1946.0> closing AMQP connection <0.1946.0> (10.27.171.226:54576 -> 10.27.177.86:5672)
+2020-11-30 15:37:13.599 [info] <0.1964.0> accepting AMQP connection <0.1964.0> (10.27.160.223:60460 -> 10.27.177.86:5672)
+2020-11-30 15:37:13.601 [error] <0.1964.0> Error on AMQP connection <0.1964.0> (10.27.160.223:60460 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:37:13.610 [info] <0.1964.0> closing AMQP connection <0.1964.0> (10.27.160.223:60460 -> 10.27.177.86:5672)
+2020-11-30 15:41:52.420 [info] <0.2157.0> accepting AMQP connection <0.2157.0> (10.27.171.226:58350 -> 10.27.177.86:5672)
+2020-11-30 15:41:52.421 [error] <0.2157.0> Error on AMQP connection <0.2157.0> (10.27.171.226:58350 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:41:52.434 [info] <0.2157.0> closing AMQP connection <0.2157.0> (10.27.171.226:58350 -> 10.27.177.86:5672)
+2020-11-30 15:42:20.949 [info] <0.2180.0> accepting AMQP connection <0.2180.0> (10.27.160.223:36206 -> 10.27.177.86:5672)
+2020-11-30 15:42:20.951 [error] <0.2180.0> Error on AMQP connection <0.2180.0> (10.27.160.223:36206 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:42:20.961 [info] <0.2180.0> closing AMQP connection <0.2180.0> (10.27.160.223:36206 -> 10.27.177.86:5672)
+2020-11-30 15:47:04.803 [info] <0.2377.0> accepting AMQP connection <0.2377.0> (10.27.171.226:35438 -> 10.27.177.86:5672)
+2020-11-30 15:47:04.805 [error] <0.2377.0> Error on AMQP connection <0.2377.0> (10.27.171.226:35438 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:47:04.823 [info] <0.2377.0> closing AMQP connection <0.2377.0> (10.27.171.226:35438 -> 10.27.177.86:5672)
+2020-11-30 15:47:34.464 [info] <0.2400.0> accepting AMQP connection <0.2400.0> (10.27.160.223:41388 -> 10.27.177.86:5672)
+2020-11-30 15:47:34.465 [error] <0.2400.0> Error on AMQP connection <0.2400.0> (10.27.160.223:41388 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:47:34.474 [info] <0.2400.0> closing AMQP connection <0.2400.0> (10.27.160.223:41388 -> 10.27.177.86:5672)
+2020-11-30 15:48:27.574 [info] <0.2441.0> accepting AMQP connection <0.2441.0> (10.27.162.34:34646 -> 10.27.177.86:5672)
+2020-11-30 15:48:27.576 [error] <0.2441.0> Error on AMQP connection <0.2441.0> (10.27.162.34:34646 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:48:27.581 [info] <0.2441.0> closing AMQP connection <0.2441.0> (10.27.162.34:34646 -> 10.27.177.86:5672)
+2020-11-30 15:48:31.767 [info] <0.2445.0> accepting AMQP connection <0.2445.0> (10.27.162.34:34698 -> 10.27.177.86:5672)
+2020-11-30 15:48:31.770 [error] <0.2445.0> Error on AMQP connection <0.2445.0> (10.27.162.34:34698 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:48:31.783 [info] <0.2445.0> closing AMQP connection <0.2445.0> (10.27.162.34:34698 -> 10.27.177.86:5672)
+2020-11-30 15:48:49.997 [info] <0.2461.0> accepting AMQP connection <0.2461.0> (10.27.162.34:34972 -> 10.27.177.86:5672)
+2020-11-30 15:48:49.998 [error] <0.2461.0> Error on AMQP connection <0.2461.0> (10.27.162.34:34972 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:48:50.012 [info] <0.2461.0> closing AMQP connection <0.2461.0> (10.27.162.34:34972 -> 10.27.177.86:5672)
+2020-11-30 15:49:23.045 [info] <0.2486.0> accepting AMQP connection <0.2486.0> (10.27.162.34:35460 -> 10.27.177.86:5672)
+2020-11-30 15:49:23.047 [error] <0.2486.0> Error on AMQP connection <0.2486.0> (10.27.162.34:35460 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:49:23.062 [info] <0.2486.0> closing AMQP connection <0.2486.0> (10.27.162.34:35460 -> 10.27.177.86:5672)
+2020-11-30 15:49:28.537 [info] <0.2494.0> accepting AMQP connection <0.2494.0> (10.27.117.156:56606 -> 10.27.177.86:5672)
+2020-11-30 15:49:28.539 [error] <0.2494.0> Error on AMQP connection <0.2494.0> (10.27.117.156:56606 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:49:28.551 [info] <0.2494.0> closing AMQP connection <0.2494.0> (10.27.117.156:56606 -> 10.27.177.86:5672)
+2020-11-30 15:49:36.263 [info] <0.2502.0> accepting AMQP connection <0.2502.0> (10.27.117.156:56762 -> 10.27.177.86:5672)
+2020-11-30 15:49:36.265 [error] <0.2502.0> Error on AMQP connection <0.2502.0> (10.27.117.156:56762 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:49:36.279 [info] <0.2502.0> closing AMQP connection <0.2502.0> (10.27.117.156:56762 -> 10.27.177.86:5672)
+2020-11-30 15:49:54.678 [info] <0.2516.0> accepting AMQP connection <0.2516.0> (10.27.117.156:57018 -> 10.27.177.86:5672)
+2020-11-30 15:49:54.680 [error] <0.2516.0> Error on AMQP connection <0.2516.0> (10.27.117.156:57018 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:49:54.690 [info] <0.2516.0> closing AMQP connection <0.2516.0> (10.27.117.156:57018 -> 10.27.177.86:5672)
+2020-11-30 15:50:17.070 [info] <0.2536.0> accepting AMQP connection <0.2536.0> (10.27.162.34:36270 -> 10.27.177.86:5672)
+2020-11-30 15:50:17.071 [error] <0.2536.0> Error on AMQP connection <0.2536.0> (10.27.162.34:36270 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:50:17.085 [info] <0.2536.0> closing AMQP connection <0.2536.0> (10.27.162.34:36270 -> 10.27.177.86:5672)
+2020-11-30 15:50:27.775 [info] <0.2547.0> accepting AMQP connection <0.2547.0> (10.27.117.156:57412 -> 10.27.177.86:5672)
+2020-11-30 15:50:27.777 [error] <0.2547.0> Error on AMQP connection <0.2547.0> (10.27.117.156:57412 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:50:27.786 [info] <0.2547.0> closing AMQP connection <0.2547.0> (10.27.117.156:57412 -> 10.27.177.86:5672)
+2020-11-30 15:51:25.825 [info] <0.2590.0> accepting AMQP connection <0.2590.0> (10.27.117.156:58222 -> 10.27.177.86:5672)
+2020-11-30 15:51:25.827 [error] <0.2590.0> Error on AMQP connection <0.2590.0> (10.27.117.156:58222 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:51:25.849 [info] <0.2590.0> closing AMQP connection <0.2590.0> (10.27.117.156:58222 -> 10.27.177.86:5672)
+2020-11-30 15:51:41.089 [info] <0.2599.0> accepting AMQP connection <0.2599.0> (10.27.162.34:37522 -> 10.27.177.86:5672)
+2020-11-30 15:51:41.091 [error] <0.2599.0> Error on AMQP connection <0.2599.0> (10.27.162.34:37522 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:51:41.104 [info] <0.2599.0> closing AMQP connection <0.2599.0> (10.27.162.34:37522 -> 10.27.177.86:5672)
+2020-11-30 15:52:56.374 [info] <0.2658.0> accepting AMQP connection <0.2658.0> (10.27.117.156:59896 -> 10.27.177.86:5672)
+2020-11-30 15:52:56.380 [error] <0.2658.0> Error on AMQP connection <0.2658.0> (10.27.117.156:59896 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:52:56.395 [info] <0.2658.0> closing AMQP connection <0.2658.0> (10.27.117.156:59896 -> 10.27.177.86:5672)
+2020-11-30 15:54:38.373 [info] <0.2726.0> accepting AMQP connection <0.2726.0> (10.27.162.34:40154 -> 10.27.177.86:5672)
+2020-11-30 15:54:38.375 [error] <0.2726.0> Error on AMQP connection <0.2726.0> (10.27.162.34:40154 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:54:38.381 [info] <0.2726.0> closing AMQP connection <0.2726.0> (10.27.162.34:40154 -> 10.27.177.86:5672)
+2020-11-30 15:55:46.916 [info] <0.2779.0> accepting AMQP connection <0.2779.0> (10.27.117.156:35912 -> 10.27.177.86:5672)
+2020-11-30 15:55:46.919 [error] <0.2779.0> Error on AMQP connection <0.2779.0> (10.27.117.156:35912 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:55:46.933 [info] <0.2779.0> closing AMQP connection <0.2779.0> (10.27.117.156:35912 -> 10.27.177.86:5672)
+2020-11-30 15:59:44.017 [info] <0.2940.0> accepting AMQP connection <0.2940.0> (10.27.162.34:44592 -> 10.27.177.86:5672)
+2020-11-30 15:59:44.019 [error] <0.2940.0> Error on AMQP connection <0.2940.0> (10.27.162.34:44592 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 15:59:44.036 [info] <0.2940.0> closing AMQP connection <0.2940.0> (10.27.162.34:44592 -> 10.27.177.86:5672)
+2020-11-30 16:00:57.413 [info] <0.2997.0> accepting AMQP connection <0.2997.0> (10.27.117.156:45774 -> 10.27.177.86:5672)
+2020-11-30 16:00:57.415 [error] <0.2997.0> Error on AMQP connection <0.2997.0> (10.27.117.156:45774 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:00:57.428 [info] <0.2997.0> closing AMQP connection <0.2997.0> (10.27.117.156:45774 -> 10.27.177.86:5672)
+2020-11-30 16:04:57.022 [info] <0.3163.0> accepting AMQP connection <0.3163.0> (10.27.162.34:50094 -> 10.27.177.86:5672)
+2020-11-30 16:04:57.025 [error] <0.3163.0> Error on AMQP connection <0.3163.0> (10.27.162.34:50094 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:04:57.033 [info] <0.3163.0> closing AMQP connection <0.3163.0> (10.27.162.34:50094 -> 10.27.177.86:5672)
+2020-11-30 16:06:06.990 [info] <0.3211.0> accepting AMQP connection <0.3211.0> (10.27.117.156:54366 -> 10.27.177.86:5672)
+2020-11-30 16:06:06.992 [error] <0.3211.0> Error on AMQP connection <0.3211.0> (10.27.117.156:54366 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:06:07.002 [info] <0.3211.0> closing AMQP connection <0.3211.0> (10.27.117.156:54366 -> 10.27.177.86:5672)
+2020-11-30 16:10:10.227 [info] <0.3379.0> accepting AMQP connection <0.3379.0> (10.27.162.34:55284 -> 10.27.177.86:5672)
+2020-11-30 16:10:10.229 [error] <0.3379.0> Error on AMQP connection <0.3379.0> (10.27.162.34:55284 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:10:10.246 [info] <0.3379.0> closing AMQP connection <0.3379.0> (10.27.162.34:55284 -> 10.27.177.86:5672)
+2020-11-30 16:11:21.725 [info] <0.3430.0> accepting AMQP connection <0.3430.0> (10.27.117.156:59212 -> 10.27.177.86:5672)
+2020-11-30 16:11:21.730 [error] <0.3430.0> Error on AMQP connection <0.3430.0> (10.27.117.156:59212 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:11:21.740 [info] <0.3430.0> closing AMQP connection <0.3430.0> (10.27.117.156:59212 -> 10.27.177.86:5672)
+2020-11-30 16:15:25.939 [info] <0.3603.0> accepting AMQP connection <0.3603.0> (10.27.162.34:32786 -> 10.27.177.86:5672)
+2020-11-30 16:15:25.941 [error] <0.3603.0> Error on AMQP connection <0.3603.0> (10.27.162.34:32786 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:15:25.947 [info] <0.3603.0> closing AMQP connection <0.3603.0> (10.27.162.34:32786 -> 10.27.177.86:5672)
+2020-11-30 16:16:31.619 [info] <0.3649.0> accepting AMQP connection <0.3649.0> (10.27.117.156:35888 -> 10.27.177.86:5672)
+2020-11-30 16:16:31.621 [error] <0.3649.0> Error on AMQP connection <0.3649.0> (10.27.117.156:35888 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:16:31.631 [info] <0.3649.0> closing AMQP connection <0.3649.0> (10.27.117.156:35888 -> 10.27.177.86:5672)
+2020-11-30 16:20:33.137 [info] <0.3817.0> accepting AMQP connection <0.3817.0> (10.27.162.34:37490 -> 10.27.177.86:5672)
+2020-11-30 16:20:33.146 [error] <0.3817.0> Error on AMQP connection <0.3817.0> (10.27.162.34:37490 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:20:33.172 [info] <0.3817.0> closing AMQP connection <0.3817.0> (10.27.162.34:37490 -> 10.27.177.86:5672)
+2020-11-30 16:21:47.721 [info] <0.3871.0> accepting AMQP connection <0.3871.0> (10.27.117.156:40172 -> 10.27.177.86:5672)
+2020-11-30 16:21:47.724 [error] <0.3871.0> Error on AMQP connection <0.3871.0> (10.27.117.156:40172 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:21:47.734 [info] <0.3871.0> closing AMQP connection <0.3871.0> (10.27.117.156:40172 -> 10.27.177.86:5672)
+2020-11-30 16:25:47.084 [info] <0.4037.0> accepting AMQP connection <0.4037.0> (10.27.162.34:42330 -> 10.27.177.86:5672)
+2020-11-30 16:25:47.085 [error] <0.4037.0> Error on AMQP connection <0.4037.0> (10.27.162.34:42330 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:25:47.100 [info] <0.4037.0> closing AMQP connection <0.4037.0> (10.27.162.34:42330 -> 10.27.177.86:5672)
+2020-11-30 16:27:05.835 [info] <0.4092.0> accepting AMQP connection <0.4092.0> (10.27.117.156:44460 -> 10.27.177.86:5672)
+2020-11-30 16:27:05.840 [error] <0.4092.0> Error on AMQP connection <0.4092.0> (10.27.117.156:44460 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:27:05.851 [info] <0.4092.0> closing AMQP connection <0.4092.0> (10.27.117.156:44460 -> 10.27.177.86:5672)
+2020-11-30 16:30:55.020 [info] <0.4250.0> accepting AMQP connection <0.4250.0> (10.27.162.34:47170 -> 10.27.177.86:5672)
+2020-11-30 16:30:55.022 [error] <0.4250.0> Error on AMQP connection <0.4250.0> (10.27.162.34:47170 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:30:55.028 [info] <0.4250.0> closing AMQP connection <0.4250.0> (10.27.162.34:47170 -> 10.27.177.86:5672)
+2020-11-30 16:32:21.633 [info] <0.4312.0> accepting AMQP connection <0.4312.0> (10.27.117.156:48684 -> 10.27.177.86:5672)
+2020-11-30 16:32:21.636 [error] <0.4312.0> Error on AMQP connection <0.4312.0> (10.27.117.156:48684 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:32:21.646 [info] <0.4312.0> closing AMQP connection <0.4312.0> (10.27.117.156:48684 -> 10.27.177.86:5672)
+2020-11-30 16:36:00.005 [info] <0.4465.0> accepting AMQP connection <0.4465.0> (10.27.162.34:52216 -> 10.27.177.86:5672)
+2020-11-30 16:36:00.006 [error] <0.4465.0> Error on AMQP connection <0.4465.0> (10.27.162.34:52216 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:36:00.020 [info] <0.4465.0> closing AMQP connection <0.4465.0> (10.27.162.34:52216 -> 10.27.177.86:5672)
+2020-11-30 16:37:29.593 [info] <0.4529.0> accepting AMQP connection <0.4529.0> (10.27.117.156:53268 -> 10.27.177.86:5672)
+2020-11-30 16:37:29.597 [error] <0.4529.0> Error on AMQP connection <0.4529.0> (10.27.117.156:53268 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:37:29.608 [info] <0.4529.0> closing AMQP connection <0.4529.0> (10.27.117.156:53268 -> 10.27.177.86:5672)
+2020-11-30 16:41:11.061 [info] <0.4680.0> accepting AMQP connection <0.4680.0> (10.27.162.34:57822 -> 10.27.177.86:5672)
+2020-11-30 16:41:11.065 [error] <0.4680.0> Error on AMQP connection <0.4680.0> (10.27.162.34:57822 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:41:11.079 [info] <0.4680.0> closing AMQP connection <0.4680.0> (10.27.162.34:57822 -> 10.27.177.86:5672)
+2020-11-30 16:42:45.798 [info] <0.4752.0> accepting AMQP connection <0.4752.0> (10.27.117.156:57580 -> 10.27.177.86:5672)
+2020-11-30 16:42:45.800 [error] <0.4752.0> Error on AMQP connection <0.4752.0> (10.27.117.156:57580 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:42:45.811 [info] <0.4752.0> closing AMQP connection <0.4752.0> (10.27.117.156:57580 -> 10.27.177.86:5672)
+2020-11-30 16:46:17.016 [info] <0.4898.0> accepting AMQP connection <0.4898.0> (10.27.162.34:34522 -> 10.27.177.86:5672)
+2020-11-30 16:46:17.018 [error] <0.4898.0> Error on AMQP connection <0.4898.0> (10.27.162.34:34522 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:46:17.031 [info] <0.4898.0> closing AMQP connection <0.4898.0> (10.27.162.34:34522 -> 10.27.177.86:5672)
+2020-11-30 16:47:57.063 [info] <0.4970.0> accepting AMQP connection <0.4970.0> (10.27.117.156:33654 -> 10.27.177.86:5672)
+2020-11-30 16:47:57.067 [error] <0.4970.0> Error on AMQP connection <0.4970.0> (10.27.117.156:33654 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:47:57.080 [info] <0.4970.0> closing AMQP connection <0.4970.0> (10.27.117.156:33654 -> 10.27.177.86:5672)
+2020-11-30 16:51:24.042 [info] <0.5110.0> accepting AMQP connection <0.5110.0> (10.27.162.34:39806 -> 10.27.177.86:5672)
+2020-11-30 16:51:24.043 [error] <0.5110.0> Error on AMQP connection <0.5110.0> (10.27.162.34:39806 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:51:24.058 [info] <0.5110.0> closing AMQP connection <0.5110.0> (10.27.162.34:39806 -> 10.27.177.86:5672)
+2020-11-30 16:53:08.817 [info] <0.5184.0> accepting AMQP connection <0.5184.0> (10.27.117.156:38224 -> 10.27.177.86:5672)
+2020-11-30 16:53:08.819 [error] <0.5184.0> Error on AMQP connection <0.5184.0> (10.27.117.156:38224 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:53:08.828 [info] <0.5184.0> closing AMQP connection <0.5184.0> (10.27.117.156:38224 -> 10.27.177.86:5672)
+2020-11-30 16:56:38.384 [info] <0.5330.0> accepting AMQP connection <0.5330.0> (10.27.162.34:44802 -> 10.27.177.86:5672)
+2020-11-30 16:56:38.386 [error] <0.5330.0> Error on AMQP connection <0.5330.0> (10.27.162.34:44802 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:56:38.400 [info] <0.5330.0> closing AMQP connection <0.5330.0> (10.27.162.34:44802 -> 10.27.177.86:5672)
+2020-11-30 16:58:19.856 [info] <0.5403.0> accepting AMQP connection <0.5403.0> (10.27.117.156:43806 -> 10.27.177.86:5672)
+2020-11-30 16:58:19.858 [error] <0.5403.0> Error on AMQP connection <0.5403.0> (10.27.117.156:43806 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 16:58:19.870 [info] <0.5403.0> closing AMQP connection <0.5403.0> (10.27.117.156:43806 -> 10.27.177.86:5672)
+2020-11-30 17:01:42.986 [info] <0.5544.0> accepting AMQP connection <0.5544.0> (10.27.162.34:49572 -> 10.27.177.86:5672)
+2020-11-30 17:01:42.987 [error] <0.5544.0> Error on AMQP connection <0.5544.0> (10.27.162.34:49572 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:01:42.999 [info] <0.5544.0> closing AMQP connection <0.5544.0> (10.27.162.34:49572 -> 10.27.177.86:5672)
+2020-11-30 17:03:37.635 [info] <0.5625.0> accepting AMQP connection <0.5625.0> (10.27.117.156:49014 -> 10.27.177.86:5672)
+2020-11-30 17:03:37.637 [error] <0.5625.0> Error on AMQP connection <0.5625.0> (10.27.117.156:49014 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:03:37.648 [info] <0.5625.0> closing AMQP connection <0.5625.0> (10.27.117.156:49014 -> 10.27.177.86:5672)
+2020-11-30 17:06:55.094 [info] <0.5762.0> accepting AMQP connection <0.5762.0> (10.27.162.34:54414 -> 10.27.177.86:5672)
+2020-11-30 17:06:55.096 [error] <0.5762.0> Error on AMQP connection <0.5762.0> (10.27.162.34:54414 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:06:55.108 [info] <0.5762.0> closing AMQP connection <0.5762.0> (10.27.162.34:54414 -> 10.27.177.86:5672)
+2020-11-30 17:08:49.684 [info] <0.5843.0> accepting AMQP connection <0.5843.0> (10.27.117.156:54436 -> 10.27.177.86:5672)
+2020-11-30 17:08:49.687 [error] <0.5843.0> Error on AMQP connection <0.5843.0> (10.27.117.156:54436 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:08:49.696 [info] <0.5843.0> closing AMQP connection <0.5843.0> (10.27.117.156:54436 -> 10.27.177.86:5672)
+2020-11-30 17:11:58.970 [info] <0.5977.0> accepting AMQP connection <0.5977.0> (10.27.162.34:59094 -> 10.27.177.86:5672)
+2020-11-30 17:11:58.971 [error] <0.5977.0> Error on AMQP connection <0.5977.0> (10.27.162.34:59094 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:11:58.983 [info] <0.5977.0> closing AMQP connection <0.5977.0> (10.27.162.34:59094 -> 10.27.177.86:5672)
+2020-11-30 17:14:03.804 [info] <0.6065.0> accepting AMQP connection <0.6065.0> (10.27.117.156:34128 -> 10.27.177.86:5672)
+2020-11-30 17:14:03.806 [error] <0.6065.0> Error on AMQP connection <0.6065.0> (10.27.117.156:34128 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:14:03.819 [info] <0.6065.0> closing AMQP connection <0.6065.0> (10.27.117.156:34128 -> 10.27.177.86:5672)
+2020-11-30 17:17:04.464 [info] <0.6190.0> accepting AMQP connection <0.6190.0> (10.27.162.34:35556 -> 10.27.177.86:5672)
+2020-11-30 17:17:04.466 [error] <0.6190.0> Error on AMQP connection <0.6190.0> (10.27.162.34:35556 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:17:04.481 [info] <0.6190.0> closing AMQP connection <0.6190.0> (10.27.162.34:35556 -> 10.27.177.86:5672)
+2020-11-30 17:19:20.612 [info] <0.6284.0> accepting AMQP connection <0.6284.0> (10.27.117.156:39270 -> 10.27.177.86:5672)
+2020-11-30 17:19:20.614 [error] <0.6284.0> Error on AMQP connection <0.6284.0> (10.27.117.156:39270 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:19:20.625 [info] <0.6284.0> closing AMQP connection <0.6284.0> (10.27.117.156:39270 -> 10.27.177.86:5672)
+2020-11-30 17:22:09.530 [info] <0.6402.0> accepting AMQP connection <0.6402.0> (10.27.162.34:40244 -> 10.27.177.86:5672)
+2020-11-30 17:22:09.532 [error] <0.6402.0> Error on AMQP connection <0.6402.0> (10.27.162.34:40244 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:22:09.546 [info] <0.6402.0> closing AMQP connection <0.6402.0> (10.27.162.34:40244 -> 10.27.177.86:5672)
+2020-11-30 17:24:40.741 [info] <0.6506.0> accepting AMQP connection <0.6506.0> (10.27.117.156:43990 -> 10.27.177.86:5672)
+2020-11-30 17:24:40.743 [error] <0.6506.0> Error on AMQP connection <0.6506.0> (10.27.117.156:43990 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:24:40.754 [info] <0.6506.0> closing AMQP connection <0.6506.0> (10.27.117.156:43990 -> 10.27.177.86:5672)
+2020-11-30 17:27:14.150 [info] <0.6614.0> accepting AMQP connection <0.6614.0> (10.27.162.34:45072 -> 10.27.177.86:5672)
+2020-11-30 17:27:14.151 [error] <0.6614.0> Error on AMQP connection <0.6614.0> (10.27.162.34:45072 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:27:14.166 [info] <0.6614.0> closing AMQP connection <0.6614.0> (10.27.162.34:45072 -> 10.27.177.86:5672)
+2020-11-30 17:29:47.806 [info] <0.6725.0> accepting AMQP connection <0.6725.0> (10.27.117.156:48564 -> 10.27.177.86:5672)
+2020-11-30 17:29:47.808 [error] <0.6725.0> Error on AMQP connection <0.6725.0> (10.27.117.156:48564 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:29:47.819 [info] <0.6725.0> closing AMQP connection <0.6725.0> (10.27.117.156:48564 -> 10.27.177.86:5672)
+2020-11-30 17:32:23.094 [info] <0.6833.0> accepting AMQP connection <0.6833.0> (10.27.162.34:50870 -> 10.27.177.86:5672)
+2020-11-30 17:32:23.096 [error] <0.6833.0> Error on AMQP connection <0.6833.0> (10.27.162.34:50870 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:32:23.110 [info] <0.6833.0> closing AMQP connection <0.6833.0> (10.27.162.34:50870 -> 10.27.177.86:5672)
+2020-11-30 17:35:00.695 [info] <0.6943.0> accepting AMQP connection <0.6943.0> (10.27.117.156:53144 -> 10.27.177.86:5672)
+2020-11-30 17:35:00.697 [error] <0.6943.0> Error on AMQP connection <0.6943.0> (10.27.117.156:53144 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:35:00.707 [info] <0.6943.0> closing AMQP connection <0.6943.0> (10.27.117.156:53144 -> 10.27.177.86:5672)
+2020-11-30 17:37:29.153 [info] <0.7048.0> accepting AMQP connection <0.7048.0> (10.27.162.34:56154 -> 10.27.177.86:5672)
+2020-11-30 17:37:29.155 [error] <0.7048.0> Error on AMQP connection <0.7048.0> (10.27.162.34:56154 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:37:29.170 [info] <0.7048.0> closing AMQP connection <0.7048.0> (10.27.162.34:56154 -> 10.27.177.86:5672)
+2020-11-30 17:40:14.753 [info] <0.7165.0> accepting AMQP connection <0.7165.0> (10.27.117.156:57778 -> 10.27.177.86:5672)
+2020-11-30 17:40:14.756 [error] <0.7165.0> Error on AMQP connection <0.7165.0> (10.27.117.156:57778 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:40:14.767 [info] <0.7165.0> closing AMQP connection <0.7165.0> (10.27.117.156:57778 -> 10.27.177.86:5672)
+2020-11-30 17:42:33.471 [info] <0.7261.0> accepting AMQP connection <0.7261.0> (10.27.162.34:32828 -> 10.27.177.86:5672)
+2020-11-30 17:42:33.474 [error] <0.7261.0> Error on AMQP connection <0.7261.0> (10.27.162.34:32828 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:42:33.494 [info] <0.7261.0> closing AMQP connection <0.7261.0> (10.27.162.34:32828 -> 10.27.177.86:5672)
+2020-11-30 17:45:20.668 [info] <0.7375.0> accepting AMQP connection <0.7375.0> (10.27.117.156:34008 -> 10.27.177.86:5672)
+2020-11-30 17:45:20.670 [error] <0.7375.0> Error on AMQP connection <0.7375.0> (10.27.117.156:34008 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:45:20.681 [info] <0.7375.0> closing AMQP connection <0.7375.0> (10.27.117.156:34008 -> 10.27.177.86:5672)
+2020-11-30 17:47:46.078 [info] <0.7480.0> accepting AMQP connection <0.7480.0> (10.27.162.34:37774 -> 10.27.177.86:5672)
+2020-11-30 17:47:46.080 [error] <0.7480.0> Error on AMQP connection <0.7480.0> (10.27.162.34:37774 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:47:46.095 [info] <0.7480.0> closing AMQP connection <0.7480.0> (10.27.162.34:37774 -> 10.27.177.86:5672)
+2020-11-30 17:50:27.756 [info] <0.7594.0> accepting AMQP connection <0.7594.0> (10.27.117.156:38576 -> 10.27.177.86:5672)
+2020-11-30 17:50:27.758 [error] <0.7594.0> Error on AMQP connection <0.7594.0> (10.27.117.156:38576 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:50:27.770 [info] <0.7594.0> closing AMQP connection <0.7594.0> (10.27.117.156:38576 -> 10.27.177.86:5672)
+2020-11-30 17:52:55.064 [info] <0.7694.0> accepting AMQP connection <0.7694.0> (10.27.162.34:42940 -> 10.27.177.86:5672)
+2020-11-30 17:52:55.067 [error] <0.7694.0> Error on AMQP connection <0.7694.0> (10.27.162.34:42940 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:52:55.080 [info] <0.7694.0> closing AMQP connection <0.7694.0> (10.27.162.34:42940 -> 10.27.177.86:5672)
+2020-11-30 17:55:33.720 [info] <0.7807.0> accepting AMQP connection <0.7807.0> (10.27.117.156:43220 -> 10.27.177.86:5672)
+2020-11-30 17:55:33.722 [error] <0.7807.0> Error on AMQP connection <0.7807.0> (10.27.117.156:43220 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:55:33.732 [info] <0.7807.0> closing AMQP connection <0.7807.0> (10.27.117.156:43220 -> 10.27.177.86:5672)
+2020-11-30 17:58:03.465 [info] <0.7913.0> accepting AMQP connection <0.7913.0> (10.27.162.34:47884 -> 10.27.177.86:5672)
+2020-11-30 17:58:03.470 [error] <0.7913.0> Error on AMQP connection <0.7913.0> (10.27.162.34:47884 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 17:58:03.485 [info] <0.7913.0> closing AMQP connection <0.7913.0> (10.27.162.34:47884 -> 10.27.177.86:5672)
+2020-11-30 18:00:50.745 [info] <0.8027.0> accepting AMQP connection <0.8027.0> (10.27.117.156:48020 -> 10.27.177.86:5672)
+2020-11-30 18:00:50.748 [error] <0.8027.0> Error on AMQP connection <0.8027.0> (10.27.117.156:48020 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:00:50.763 [info] <0.8027.0> closing AMQP connection <0.8027.0> (10.27.117.156:48020 -> 10.27.177.86:5672)
+2020-11-30 18:03:15.248 [info] <0.8130.0> accepting AMQP connection <0.8130.0> (10.27.162.34:52778 -> 10.27.177.86:5672)
+2020-11-30 18:03:15.249 [error] <0.8130.0> Error on AMQP connection <0.8130.0> (10.27.162.34:52778 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:03:15.256 [info] <0.8130.0> closing AMQP connection <0.8130.0> (10.27.162.34:52778 -> 10.27.177.86:5672)
+2020-11-30 18:06:00.638 [info] <0.8245.0> accepting AMQP connection <0.8245.0> (10.27.117.156:52486 -> 10.27.177.86:5672)
+2020-11-30 18:06:00.640 [error] <0.8245.0> Error on AMQP connection <0.8245.0> (10.27.117.156:52486 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:06:00.650 [info] <0.8245.0> closing AMQP connection <0.8245.0> (10.27.117.156:52486 -> 10.27.177.86:5672)
+2020-11-30 18:08:27.074 [info] <0.8350.0> accepting AMQP connection <0.8350.0> (10.27.162.34:57598 -> 10.27.177.86:5672)
+2020-11-30 18:08:27.076 [error] <0.8350.0> Error on AMQP connection <0.8350.0> (10.27.162.34:57598 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:08:27.089 [info] <0.8350.0> closing AMQP connection <0.8350.0> (10.27.162.34:57598 -> 10.27.177.86:5672)
+2020-11-30 18:11:17.613 [info] <0.8467.0> accepting AMQP connection <0.8467.0> (10.27.117.156:56774 -> 10.27.177.86:5672)
+2020-11-30 18:11:17.615 [error] <0.8467.0> Error on AMQP connection <0.8467.0> (10.27.117.156:56774 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:11:17.624 [info] <0.8467.0> closing AMQP connection <0.8467.0> (10.27.117.156:56774 -> 10.27.177.86:5672)
+2020-11-30 18:13:40.139 [info] <0.8565.0> accepting AMQP connection <0.8565.0> (10.27.162.34:34242 -> 10.27.177.86:5672)
+2020-11-30 18:13:40.141 [error] <0.8565.0> Error on AMQP connection <0.8565.0> (10.27.162.34:34242 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:13:40.155 [info] <0.8565.0> closing AMQP connection <0.8565.0> (10.27.162.34:34242 -> 10.27.177.86:5672)
+2020-11-30 18:16:24.674 [info] <0.8681.0> accepting AMQP connection <0.8681.0> (10.27.117.156:60896 -> 10.27.177.86:5672)
+2020-11-30 18:16:24.676 [error] <0.8681.0> Error on AMQP connection <0.8681.0> (10.27.117.156:60896 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:16:24.686 [info] <0.8681.0> closing AMQP connection <0.8681.0> (10.27.117.156:60896 -> 10.27.177.86:5672)
+2020-11-30 18:18:44.069 [info] <0.8778.0> accepting AMQP connection <0.8778.0> (10.27.162.34:39006 -> 10.27.177.86:5672)
+2020-11-30 18:18:44.071 [error] <0.8778.0> Error on AMQP connection <0.8778.0> (10.27.162.34:39006 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:18:44.088 [info] <0.8778.0> closing AMQP connection <0.8778.0> (10.27.162.34:39006 -> 10.27.177.86:5672)
+2020-11-30 18:21:34.748 [info] <0.8898.0> accepting AMQP connection <0.8898.0> (10.27.117.156:37074 -> 10.27.177.86:5672)
+2020-11-30 18:21:34.750 [error] <0.8898.0> Error on AMQP connection <0.8898.0> (10.27.117.156:37074 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:21:34.760 [info] <0.8898.0> closing AMQP connection <0.8898.0> (10.27.117.156:37074 -> 10.27.177.86:5672)
+2020-11-30 18:23:56.038 [info] <0.9000.0> accepting AMQP connection <0.9000.0> (10.27.162.34:43888 -> 10.27.177.86:5672)
+2020-11-30 18:23:56.039 [error] <0.9000.0> Error on AMQP connection <0.9000.0> (10.27.162.34:43888 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:23:56.052 [info] <0.9000.0> closing AMQP connection <0.9000.0> (10.27.162.34:43888 -> 10.27.177.86:5672)
+2020-11-30 18:26:47.716 [info] <0.9118.0> accepting AMQP connection <0.9118.0> (10.27.117.156:41538 -> 10.27.177.86:5672)
+2020-11-30 18:26:47.718 [error] <0.9118.0> Error on AMQP connection <0.9118.0> (10.27.117.156:41538 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:26:47.726 [info] <0.9118.0> closing AMQP connection <0.9118.0> (10.27.117.156:41538 -> 10.27.177.86:5672)
+2020-11-30 18:29:10.048 [info] <0.9215.0> accepting AMQP connection <0.9215.0> (10.27.162.34:48818 -> 10.27.177.86:5672)
+2020-11-30 18:29:10.050 [error] <0.9215.0> Error on AMQP connection <0.9215.0> (10.27.162.34:48818 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:29:10.063 [info] <0.9215.0> closing AMQP connection <0.9215.0> (10.27.162.34:48818 -> 10.27.177.86:5672)
+2020-11-30 18:32:02.558 [info] <0.9338.0> accepting AMQP connection <0.9338.0> (10.27.117.156:46018 -> 10.27.177.86:5672)
+2020-11-30 18:32:02.560 [error] <0.9338.0> Error on AMQP connection <0.9338.0> (10.27.117.156:46018 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:32:02.572 [info] <0.9338.0> closing AMQP connection <0.9338.0> (10.27.117.156:46018 -> 10.27.177.86:5672)
+2020-11-30 18:34:21.012 [info] <0.9434.0> accepting AMQP connection <0.9434.0> (10.27.162.34:53636 -> 10.27.177.86:5672)
+2020-11-30 18:34:21.014 [error] <0.9434.0> Error on AMQP connection <0.9434.0> (10.27.162.34:53636 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:34:21.029 [info] <0.9434.0> closing AMQP connection <0.9434.0> (10.27.162.34:53636 -> 10.27.177.86:5672)
+2020-11-30 18:37:15.726 [info] <0.9558.0> accepting AMQP connection <0.9558.0> (10.27.117.156:50508 -> 10.27.177.86:5672)
+2020-11-30 18:37:15.728 [error] <0.9558.0> Error on AMQP connection <0.9558.0> (10.27.117.156:50508 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:37:15.738 [info] <0.9558.0> closing AMQP connection <0.9558.0> (10.27.117.156:50508 -> 10.27.177.86:5672)
+2020-11-30 18:39:39.342 [info] <0.9656.0> accepting AMQP connection <0.9656.0> (10.27.162.34:58538 -> 10.27.177.86:5672)
+2020-11-30 18:39:39.344 [error] <0.9656.0> Error on AMQP connection <0.9656.0> (10.27.162.34:58538 -> 10.27.177.86:5672, state: starting):
+PLAIN login refused: user 'guest' - invalid credentials
+2020-11-30 18:39:39.359 [info] <0.9656.0> closing AMQP connection <0.9656.0> (10.27.162.34:58538 -> 10.27.177.86:5672)

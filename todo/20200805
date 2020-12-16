@@ -1,0 +1,63 @@
+- PPJXC-277 [https://ccycloud.atlassian.net/browse/PPJXC-277] 
+    -   investigate:
+            - connection to nexus from maven repo fine
+            - from oracle - [x]
+            - do we need to set nexus to mirror specific repos? 
+=============
+2020-08-06
+    - Stew: lhv added com.sleepycat.je:7.4.5 to their project a while back and
+      have since removed it. They may have simply published the jar to nexus,
+rather than having nexus mirror the oracle repo where the jar resides.
+      The jar is in our nexus, in `maven-releases` instead of being a
+repository mirror.
+    - Current issue: unavailability of non-maven-central repos in nexus
+
+TODO:
+
+    - inspect & understand jenkins logs attached in Jira
+      [https://ccycloud.atlassian.net/browse/PPJXC-277]
+    - inspect & understand jenkins run from dummy PR
+      [http://jenkins.jx.nonprod.ccycloud.io/job/ccycloud/job/payment-provider-lhv/job/PR-127/1/console]
+    - get nexus link and explore
+    - understand how to setup/mirror repos in nexus
+      [https://nexus.nonprod.ccycloud.io/]
+
+
+step 1
+
+examine logs from first jx run
+[https://ccycloud.atlassian.net/browse/PPJXC-277]
+    - 
+--
+2020-08-08
+- in
+  https://help.sonatype.com/repomanager3/repository-management#RepositoryManagement-ProxyRepository
+states that :
+
+By default, the repository manager ships with the following configured proxy repositories:
+
+maven-central
+nexus ships with https://search.maven.org/artifact/com.sleepycat/je/18.3.12/jar
+in fact it exists in our repo here: https://nexus.nonprod.ccycloud.io/#browse/search=keyword%3Dsleepycat:c770169c0b2e3ed884018e40d95fae16
+1. already exists
+2. version is different
+3. is it a different repository? i.e.
+https://www.oracle.com/database/technologies/berkeleydb-downloads-maven.html ?
+or version
+
+
+---
+recalled Jira update
+
+The error points to a particular sleepycat version [com.sleepycat:je:jar:7.4.5 ] that I haven’t been able to find in any external repo in order to proxy to our nexus repo. 
+The versions I was able to find are 18.x, 5.x and 4.x. in maven repo.
+Upon checking the sonatype documents with regards to proxy repository management, I found that ‘By default, the [sonatype] repository manager ships with some configured proxy repositories’, one of them being maven-central.
+
+I have checked the already configured proxy maven-central repository in our internal sontaype repository and it contains sleepycat v.18.x .
+
+I’ve also checked oracle’s docs for sleepycat, and as stated here, there is no mention of that specific version that lhv are using.
+So then, my questions are:
+
+Am I looking in the wrong location? Or,
+
+are LHV using an outdated version that is no more available?
