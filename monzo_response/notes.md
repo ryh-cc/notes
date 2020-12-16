@@ -18,7 +18,7 @@ Management of updates: How often does it get update? How do we manage that?
 
 */
 
-##Monzo Reponse
+## Monzo Reponse
 Monzo Response is essentially a Slack bot that handles the communication,
 reporting and coordination that needs to happen during and after incidents, allowing the
 engineers and stakeholders to concentrate on identifying root cause and solving
@@ -30,16 +30,16 @@ and initiate the process of setting incident lead, creating a dedicated place
 https://monzo.com/blog/2019/07/08/how-we-respond-to-incidents and
 https://github.com/monzo/response.
 
-###Response Components 
+### Response Components 
 Response consists of a Django project using the 
 [django-incident-reponse](https://pypi.org/project/django-incident-response/)
 package, a slack app (this needs configuring in your environment), a postgres
 db used by the app to store incident data, the main response app and a cron
 configured to hit an endpoint in Response every minute.
 
-###Deployment 
+### Deployment 
 
-####Slack app
+#### Slack app
 
 The slack app needs a number of scopes as listed
 [here](https://github.com/monzo/response/blob/master/docs/slack_app_create.md#creating-your-slack-app).
@@ -48,7 +48,7 @@ credentials, a set of IDs and Tokens to allow the app access the Slack API.
 These need to be securely stored.
 The app will need to be installed in the relevant slack workspace.
 
-####Server
+#### Server
 A pre-requisite to the Slack app is a server running and accessible to the
 internet.
 In our case running the server in the nonprod EKS cluster and 
