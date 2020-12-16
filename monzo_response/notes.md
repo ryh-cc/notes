@@ -46,7 +46,7 @@ exposed through a k8s service type LoadBalancer and Cloudflare Loadbalancer.
 The app seems to be updated once every month or two. Keeping up with the
 updates will not be problematic.
 
-### [Authentication](#Authentication)
+### Authentication
 Communication between application and slack is managed in Slack through [signed
 secrets](https://api.slack.com/authentication/verifying-requests-from-slack).
 Slack signs its requests using a secret key that is unique to the app; this
