@@ -56,8 +56,8 @@ exposed through a k8s service type LoadBalancer and Cloudflare Loadbalancer.
 
 ### Authentication
 
-Communication between application and slack is managed in Slack through (signed
-secrets)[https://api.slack.com/authentication/verifying-requests-from-slack].
+Communication between application and slack is managed in Slack through [signed
+secrets](https://api.slack.com/authentication/verifying-requests-from-slack).
 Slack signs its requests using a secret key that is unique to the app; this
 helps the app authenticate requests from Slack. A Slack OAuth Access token is
 used to use the Slack API.
