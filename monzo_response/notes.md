@@ -1,16 +1,15 @@
-Prompted by COPS request (https://ccycloud.atlassian.net/browse/SEC-1046) to
+## Monzo Reponse
+Prompted by COPS [request](https://ccycloud.atlassian.net/browse/SEC-1046) to
 have an incident response system to handle comms and coordinate all incident
-related reporting, status pages etc, this document will serve as an analysis
-and design document of Monzo Response with regards to it's deployment and
-management in Currencycloud.
+related reporting, status pages etc, this document will look at Monzo Response
+with regards to it's deployment and management in Currencycloud.
 
 There is a paid alternative product - Firehydrant - however analysing it is
 outside the scope of this document as we want to first assess the suitability
-of Response, monzo's open sourced version is suitable.
+of Response, Monzo's open sourced version.
 
-## Monzo Reponse
-Monzo Response is essentially a Slack bot that handles the communication,
-reporting and coordination that needs to happen during and after incidents, allowing the
+Response is essentially a Slack bot that handles the communication,
+reporting and coordination that needs to happen during and after incidents, allowing 
 engineers and stakeholders to concentrate on identifying root cause and solving
 the incident.
 
